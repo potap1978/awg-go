@@ -67,7 +67,7 @@ docker run -d \
   --sysctl="net.ipv4.ip_forward=1" \
   --device=/dev/net/tun:/dev/net/tun \
   --restart unless-stopped \
-  ghcr.io/potap1978/amnezia-wg-easy
+  ghcr.io/potap1978/awg-go-easy
 ```
 
 > 💡 Replace `YOUR_SERVER_IP` with your WAN IP, or a Dynamic DNS hostname.
