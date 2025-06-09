@@ -47,7 +47,7 @@ To automatically install & run wg-easy, simply run:
 
 ```
 docker run -d \
-  --name=amnezia-wg-easy \
+  --name=awg-go-easy \
   -e LANG=ru \
   -e WG_HOST=`curl -s ipv4.icanhazip.com` \
   -e PASSWORD_HASH='$2a$12$T8hyrJWOKGTBKa0xuZ5lAu0QaETz03EohUsjgWp9NYu6wxhiBevrW' \
@@ -131,9 +131,9 @@ These options can be configured by setting environment variables using `-e KEY="
 To update to the latest version, simply run:
 
 ```bash
-docker stop amnezia-wg-easy
-docker rm amnezia-wg-easy
-docker pull ghcr.io/potap1978/amnezia-wg-easy
+docker stop awg-go-easy
+docker rm awg-go-easy
+docker pull ghcr.io/potap1978/awg-go-easy
 ```
 
 And then run the `docker run -d \ ...` command above again.
